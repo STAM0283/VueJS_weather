@@ -34,6 +34,7 @@ h1, form {
 input {
     width: 250px;
     height: 20px;
+    margin-top: 20px;
 }
 
 #container {
@@ -43,12 +44,9 @@ input {
 .carte-weather {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: space-around;
     margin: 30px;
 
-}
-#firstCard{
-    margin-left: 5%;
 }
 
 .weather-infos {
@@ -89,6 +87,7 @@ span {
 }
 
 @media (max-width: 375px) {
+
     img{
         width: 10%;
     }
@@ -101,7 +100,7 @@ span {
     }
     .weather-infos {
         width: 130px;
-        height: 200px;
+        height: 160px;
         background-color: #A9A9A9	;
         margin: 5px;
         border-radius: 10px;
@@ -109,7 +108,7 @@ span {
     .clear {
         background-color: darkorange;
         width: 130px;
-        height: 200px;
+        height: 160px;
         margin: 5px;
         border-radius: 10px;
     }
@@ -117,7 +116,7 @@ span {
         font-size: 10px;
     }
     #container {
-        margin-top: 30px;
+        margin-top: 20px;
     }
     p {
         font-size: 18px;
@@ -125,15 +124,19 @@ span {
     input {
         width: 200px;
         height: 20px;
+        margin-top: 10px;
+    }
+    #main{
+        height: 800px;
     }
 }
 
 @media (max-width: 414px) {
+    #main{
+        height: 800px;
+    }
     img{
         width: 10%;
-    }
-    #firstCard{
-        margin-left: 5px;
     }
     .carte-weather{
         width: 78%;
@@ -168,4 +171,47 @@ span {
         width: 200px;
         height: 20px;
     }
+}
+@media (max-width: 320px){
+
+    img{
+        width: 10%;
+    }
+    .carte-weather{
+        width: 78%;
+        padding: 0;
+        margin-left: 40px;
+    }
+    .weather-infos {
+        width: 130px;
+        height: 230px;
+        background-color: #A9A9A9	;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .clear {
+        background-color: darkorange;
+        width: 130px;
+        height: 230px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    span {
+        font-size: 10px;
+    }
+    #container {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
+    input {
+        width: 200px;
+        height: 20px;
+    }
+    #main{
+        height: 830px;
+    }
+
 }
