@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 20%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.night {
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #000000, #BF2600, #000000);
+    background: linear-gradient(to right, #000000, #BF2600, #000000);
+    min-width: 400px;
+}
+
+.day {
+    background: #2980b9;
+    background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+    background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+    min-width: 400px;
+}
+
+h1, form {
+    text-align: center;
+}
+
+input {
+    width: 250px;
+    height: 20px;
+}
+
+#container {
+    margin-top: 100px;
+}
+
+.carte-weather {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 30px;
+
+}
+#firstCard{
+    margin-left: 5%;
+}
+
+.weather-infos {
+    background-color: #A9A9A9	;
+    width: 165px;
+    height: 250px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.clear {
+    background-color: darkorange;
+    width: 165px;
+    height: 250px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+span {
+    font-size: 12px;
+}
+
+#city {
+    margin-bottom: 10px;
+}
+
+#humidity-wind {
+    margin-top: 20px;
+}
+
+#temperature {
+    font-size: xx-large;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 375px) {
+    img{
+        width: 10%;
+    }
+    #firstCard{
+        margin-left: 5px;
+    }
+    .carte-weather{
+        padding: 0;
+        margin-left: 20px;
+    }
+    .weather-infos {
+        width: 130px;
+        height: 200px;
+        background-color: #A9A9A9	;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .clear {
+        background-color: darkorange;
+        width: 130px;
+        height: 200px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    span {
+        font-size: 10px;
+    }
+    #container {
+        margin-top: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
+    input {
+        width: 200px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 414px) {
+    img{
+        width: 10%;
+    }
+    #firstCard{
+        margin-left: 5px;
+    }
+    .carte-weather{
+        width: 78%;
+        padding: 0;
+        margin-left: 40px;
+    }
+    .weather-infos {
+        width: 130px;
+        height: 200px;
+        background-color: #A9A9A9	;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .clear {
+        background-color: darkorange;
+        width: 130px;
+        height: 200px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    span {
+        font-size: 10px;
+    }
+    #container {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
+    input {
+        width: 200px;
+        height: 20px;
+    }
+}
